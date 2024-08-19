@@ -1,0 +1,33 @@
+# criando listas 
+produtos_padaria = ["Pizza", "Pão Francês", "Pão de Queijo", "Mil Folhas"]
+produtos_preco = [5.00, 10.00, 2.50, 7.00]
+produtos_quantidade = [5, 10, 4, 3]
+
+# imprimindo um produto específico
+def imprimir_produto (index):
+    if 0 <= index < len (produtos_padaria)
+    print(f"Produto: {produtos_padaria[index]}")
+    print(f"Preço:{produtos_preco[index]:.2f}")
+    print(f"Quantidade:{produtos_quantidade[index]}")
+
+else:
+    print("Índice fora do alcance. Insira um índice válido")
+
+#retirando produtos das listas 
+def retirar_produto(index):
+    if 0 <= index < len (produtos_padaria):
+#removendo o produto das 3 listas 
+    nome_removido = produtos_padaria.pop (index)
+    produtos_preco.pop (index)
+    produtos_quantidade.pop (index)
+    print (f"O produto '{nome_removido}'foi excluído da lista.")
+
+else:
+    print("Índice sem alcance. Insira um índice válido.")
+
+#exemplos de uso de funções 
+imprimir_produto (2) #imprime o terceiro item
+retirar_produto (2) #retira o terceiro item
+
+#verificando se o produto foi retirado 
+imprimir_produto (2) #Agora o índice 2 corresponde ao item da lista 
